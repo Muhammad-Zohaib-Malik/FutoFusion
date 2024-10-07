@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-[80vh] mt-8">
-      <div className="w-[80vw] px-6 py-8  border border-gray-500 text-white rounded-3xl sm:w-[30vw] md:w-[50vw] lg:w-[30vw] xl:w-[35vw] shadow-lg">
-        <h1 className="mb-6 text-3xl font-semibold tracking-widest text-center">Login</h1>
+      <div className="w-[80vw] px-6 py-8  border border-gray-500  rounded-3xl sm:w-[30vw] md:w-[50vw] lg:w-[30vw] xl:w-[35vw] shadow-lg">
+        <h1 className="mb-6 text-3xl font-semibold tracking-widest text-center text-gray-400">Login</h1>
         <form>
           <div className="space-y-4">
            
@@ -47,7 +47,7 @@ const Login = () => {
                 Account Type
               </label>
               <select 
-                className="w-full px-4 py-2 tracking-wide text-white bg-gray-800 border-none rounded-lg focus:ring-2 focus:ring-zinc-500"
+                className="w-full px-4 py-2 tracking-wide bg-gray-800 border-none rounded-lg focus:ring-2 focus:ring-zinc-500"
                 name="accountType"
                 id="accountType"
               >
@@ -64,7 +64,7 @@ const Login = () => {
           >
             Login
           </button>
-          <Link to={'/signup'} className='text-[13px] mt-3 flex justify-end text-gray-500 '>Sign Up</Link>
+          <Link to={'/signup'} className='text-[13px] mt-3 flex justify-end text-gray-500'>Login</Link>
         </form>
         
       </div>
