@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom"
+import { Link ,useLocation} from "react-router-dom"
 
 const Navbar = () => {
+
+  const {pathname}=useLocation()
+
   return (
-    <nav className="flex flex-col items-start justify-between gap-1 p-5 font-semibold sm:flex-row sm:items-center sm:gap-0">
+    <nav className={`flex flex-col items-start justify-between gap-1 p-5 font-semibold sm:flex-row sm:items-center sm:gap-0 ${pathname==="/seller/profile" || pathname==="/buyer/profile" ? 'hidden' : ""}`}>
       <div className="flex items-center justify-between">
       <Link to="/" className="text-3xl font-bold font-[Monument] tracking-wider leading-4">FutoFusion</Link>
       </div>
